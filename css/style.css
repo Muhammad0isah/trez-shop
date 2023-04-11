@@ -113,13 +113,12 @@ nav .container .link-items li a{
   .content .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 10px;
+    gap: 5px;
     padding: 30px 0;
   }
   .img-col img{
     /* border: 1px solid rgba(0, 0, 0, 0.5); */
     width: 350px;
-    padding: 10px;
-    height: 300pxpx;
+    height: 350pxpx;
   }
 
