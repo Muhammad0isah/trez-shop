@@ -93,6 +93,16 @@ nav .container .link-items li a:hover{
 .menu-icons a:hover{
     color: rgba(255, 0, 0, 0.5);
 }
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+#menu-close{
+    font-size: 24px;
+    display: none;
+}
 .hero-image{
     display: none;
 }
@@ -430,3 +440,48 @@ hr{
 }
 
 
+/* tab responsive-design */
+@media  screen and (max-width: 768px) {
+
+    nav .container{
+        padding: 20px 10px;
+    }
+    #menu-btn{
+        display: initial;
+    }
+    #menu-close{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    #menu-close:hover{
+        color: red;
+    }
+    nav .container .link-items{
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 220px;
+        height: 100vh;
+        background-color: rgba(17, 20,104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        transition: 0.9s ease;        
+    }
+    nav .container .link-items .active{
+        right: 0;
+    }
+
+    nav .container .link-items li {
+        padding: 30px 30px 20px 40px;
+    }
+    nav .container .link-items li a{
+        color: #fff;
+    }
+}
