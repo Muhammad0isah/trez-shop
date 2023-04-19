@@ -17,3 +17,11 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+
+function openNav() {
+  document.getElementById("side-nav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("side-nav").style.width = "0";
+}

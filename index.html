@@ -16,8 +16,8 @@
                 <div class="line"></div>
                 <!-- <img src="./images/logo.png" alt="logo"> -->
             </div>
-            <ul class="link-items">
-                <i id="menu-close" class="fa fa-facebook"></i>
+            <ul id="side-nav" class="link-items">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">Laptop</a></li>
@@ -26,13 +26,16 @@
                 <li><a href="">Contact</a></li>
 
             </ul>
+            <!-- <span class = 'openbtn' style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
             <div class="menu-icons">
                 <div><a href="#search-bar"><i class="fa fa-search"></i></a></div>
                 <div><a href="#register"><i class="fa fa-user-o"></i></a></div>
                 <div><a href="#cart"><i class="fa fa-shopping-cart"></i></a></div>
+                <div><span class = 'openbtn' style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
             </div>
-            <img id="menu-btn" src="./images/menu.png" alt="">
         </div>
+
     </nav>
     <!-- hero section -->
     <section class="hero">
@@ -183,7 +186,7 @@
     </section>
     <section id="recommend">
         <div class="container">
-            <h2>You May Like</h2>
+            <h2 class="recommend-heading">You May Like</h2>
             <div class="recommend-item">
                     <div class="img-col">
                         <img src="./images/desktop.jpg" alt="desktop">
@@ -211,7 +214,7 @@
     </section>
     <section id="news">
         <div class="container">
-            <h1>Latest News</h1>
+            <h1 class="latest-heading">Latest News</h1>
             <div class="news-content">
                 <div class="news-col">
                     <img src="./images/magazine.jpg" alt="" srcset="">
