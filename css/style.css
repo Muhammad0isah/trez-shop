@@ -438,6 +438,9 @@ hr{
 
 /* ipad-mini responsive-design */
 @media  screen and (max-width: 768px) {
+    .container {
+        min-width: 725px;
+    }    
 
     nav .container{
         padding: 20px 10px;
@@ -454,7 +457,7 @@ hr{
         display:flex;
       }
       .menu-icons{
-        margin-right: 380px;
+        margin-right: 0;
     }
     .menu-icons i{
         font-size: 1.3em;
@@ -466,7 +469,6 @@ hr{
         color: red;
     }
     nav .container .link-items{
-        position: absolute;
         top: 0;
         right: 0;
         width: 0;
@@ -475,6 +477,10 @@ hr{
         backdrop-filter: blur(4.5px);
         border: 1px solid rgba(255, 255, 255, 0.18);
         display: block;
+        position:absolute;
+        z-index: 1;
+        overflow-x: hidden;
+      
         text-align: left;
      
     }
@@ -655,6 +661,10 @@ hr{
 /* iphone 12 pro */
 @media  screen and (max-width: 390px) {
 
+    .container {
+        min-width: 360px;
+        overflow-x: hidden;
+    }    
     nav .container{
         padding: 20px 10px;
         min-width: 390px;
@@ -662,7 +672,7 @@ hr{
     .container .closebtn {
         position: absolute;
         top: 0;
-        left: 10px;
+        left: 20px;
         display: initial;
         font-size: 3em;
         color: rgba(255, 255, 255, 0.8);
@@ -754,7 +764,7 @@ hr{
     }
     .container .trending-content{
         flex-direction: column;
-        margin-left:-700px;
+        margin-left:-10px;
         min-width: 390px;
         padding: 30px 0;
     }
@@ -771,7 +781,7 @@ hr{
     #trending .container .trending-image{
         display: flex;
         min-width: 390px;
-        margin-left: -700px;
+        margin-left: -10px;
         flex-direction: column;
         gap: 15px;
         padding: 30px 0;
@@ -781,9 +791,15 @@ hr{
         height: 350px;
     }
     .customer-testimonial {
-        margin: 0 -65px;
-        width: 46%;
+        margin: 0 auto;
+        width: 100%;
         
+    }
+    #customer{
+        height: 370px;
+    }
+    #customer .container .customer-testimonial {
+        padding: 25px 30px;
     }
     .customer-testimonial h1{
         font-size: 1.8em;
